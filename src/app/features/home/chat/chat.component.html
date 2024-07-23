@@ -1,0 +1,34 @@
+<div id="frame">
+  <div class="content">
+    <div class="messages">
+      <ul>
+        <ng-container *ngFor="let chat of chats; let i = index">
+          <li class="sent">
+            <div class="d-flex">
+              <div><img src="../assets/images/man.png" alt="" /></div>
+              <div class="flex-grow-1">
+                <h6>You</h6>
+                <p>{{ chat.questionModel.user_input }}</p>
+              </div>
+            </div>
+          </li>
+          <li class="replies" [ngClass]="{'typing': i === selectedChatIndex}">
+            <div class="d-flex">
+              <div><img src="../assets/images/bank-logo-big.jpg" alt="" width="200px"/></div>
+              <div class="flex-grow-1">
+                <h6>Central Bank of Malaysia Assistant</h6>
+                <p [class.active]="i === selectedChatIndex">{{ chat.answerModel.content }}
+                  <br>
+                  <input type="text" class="form-control" [(ngModel)]="chat.userTypedMessage"
+                  placeholder="Type your feedback here... and then hit 👍/👎" aria-label="Write your message" *ngIf="!chat.feedbackSubmitted">  
+                  <button *ngIf="!chat.feedbackSubmitted" (click)="thumbsUp(i)">👍</button>
+                  <button *ngIf="!chat.feedbackSubmitted" (click)="thumbsDown(i)">👎</button>              
+                </p>
+              </div>
+            </div>
+          </li>          
+        </ng-container>
+      </ul>
+    </div>
+  </div>
+</div>

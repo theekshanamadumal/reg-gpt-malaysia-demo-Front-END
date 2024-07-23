@@ -1,0 +1,122 @@
+@import "../partials/varibles";
+@import "../partials/fonts.scss";
+
+input[type=text]:active,
+input[type=text]:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+  border-color: #ced4da;
+}
+
+.form-control:focus {
+  box-shadow: inset 0 0 0 0 #fff;
+  border-color: #ced4da;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+  background-color: #e9ecef !important;
+}
+
+.primary-input:disabled,
+.primary-input[readonly] {
+  background-color: #e9ecef !important;
+}
+
+.primary-label {
+  position: relative;
+  margin: 0 0 10px 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: none;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.modal-label {
+  @extend .primary-label;
+  font-size: font-size(14px);
+}
+
+.form-control {
+  height: 40px !important;
+  border-radius: 6px;
+}
+
+.primary-input {
+  font-family: var(--roboto);
+  color: #000;
+  font-size: 13px;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  min-height: 42px;
+  border-radius: 6px;
+  padding: 10px 16px 10px 10px;
+  border: 1px solid #ccd5e1 !important;
+  background-color: #fff;
+  width: 100%;
+  --tw-border-opacity: 1 !important;
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow) !important;
+
+  .e-date-icon {
+    position: relative;
+    top: -3px;
+  }
+
+  .e-clear-icon {
+    position: relative;
+    top: -3px;
+  }
+}
+
+.ngb-tp-input {
+  height: 38px;
+  border-radius: 6px;
+  font-size: 13px !important;
+}
+
+.btn-outline-primary {
+  height: 38px;
+  border-radius: 6px;
+  font-size: 13px !important;
+}
+
+.primary-text-area {
+  @extend .primary-input;
+  height: 100px;
+}
+
+.primary-select {
+  @extend .primary-input;
+}
+
+// Time picker controller related
+
+.ngb-tp-input {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6 !important;
+  color: var(--color-black) !important;
+  //background-color: var(--input-bg) !important;
+  border: 1px solid #ccd5e1 !important;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 13px !important;
+  text-align: center;
+  font-weight: 400;
+  background-color: #fff !important;
+  --tw-border-opacity: 1 !important;
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow) !important;
+}
+
+textarea {
+  min-height: 80px;
+}

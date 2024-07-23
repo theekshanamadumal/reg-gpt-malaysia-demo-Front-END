@@ -1,0 +1,118 @@
+.active {
+    border: 1px solid #10734A !important;
+}
+
+#frame .content .messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#frame .content .messages ul li {
+    display: inline-block;
+    clear: both;
+    margin: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#frame .content .messages ul li.sent img {
+    margin: 0 10px 0 0;
+}
+
+#frame .content .messages ul li.sent p {
+    color: #32465a;
+    background-color: #fff;
+    border: 1px solid #D7DAED;
+    margin: 0 0 30px 0;
+    font-size: 13px;
+    line-height: 1.8;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+#frame .content .messages ul li.replies img {
+    margin: 0 10px 0 0;
+}
+
+#frame .content .messages ul li.replies p {
+    color: #32465a;
+    background: #fff;
+    border: 1px solid #D7DAED;
+    margin: 0 0 30px 0;
+    font-size: 13px;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+#frame .content .messages ul li img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+#frame .content .messages ul li p {
+    display: inline-block;
+    padding: 0 5x;
+    border-radius: 10px;
+    font-size: 13px;
+
+}
+
+#frame .content .message-input .wrap input {
+    border-radius: 10px;
+    border: 1px solid #E9EBF8;
+    padding: 15px 20px;
+    color: #32465a;
+}
+
+  /* Add this CSS to your component's stylesheet or global styles */
+  button {
+    border: none; /* Remove border */
+    background-color: transparent; /* Make background transparent */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  button:focus {
+    outline: none; /* Remove focus outline */
+  }
+  
+  /* Optionally, you can add more styles for better visual appearance */
+  button {
+    font-size: 16px; /* Adjust font size */
+    padding: 5px; /* Adjust padding */
+    margin: 2px; /* Adjust margin */
+  }
+
+  .feedback-prompt {
+    font-size: 12px; /* Adjust the font size as needed */
+    color: rgba(0, 0, 0, 0.5); /* Adjust the transparency as needed */
+  }
+  .replies {
+    animation: comeDown 0.5s ease forwards; /* Come down animation */
+  }
+
+  .submit-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .feedback-input {
+    border: none;
+    background: none;
+    outline: none; /* Remove outline when focused */
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  @keyframes comeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }  

@@ -1,0 +1,46 @@
+<!-- NavBar Start-->
+<!-- <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <ul class="nav nav-pills mb-3" *ngFor="let model of models">
+        <li class="nav-item">
+          <button 
+            class="nav-link" 
+            [ngClass]="{'active': selectedModel.type === model.type}" 
+            type="button" 
+            role="tab"
+            (click)="changeModel(model)"
+          >
+            {{model.name}}
+          </button>
+        </li>
+      </ul>
+    <div class="mx-2 bg-secondary">
+        {{user.userName[0]}}
+    </div>
+    <a class="mx-2" (click)="logout()">
+        <i class="pi pi-sign-out" ngbTooltip="Logout" placement="bottom"></i>
+    </a>
+</nav> -->
+<!-- NavBar END -->
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="d-flex justify-content-between bd-highlight">
+      <!-- <a href="#"><i class="fa-solid fa-bars"></i></a> -->
+    </div>
+    <!-- <div class="d-flex justify-content-center">
+      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <ng-container *ngFor="let model of models; let i = index">
+          <input type="radio" class="btn-check" name="btnradio" [id]="'btnradio' + i" autocomplete="off"
+            [checked]="model === selectedModel" (change)="changeModel(model)">
+          <label class="btn btn-outline-primary" [for]="'btnradio' + i">{{ "Model " + (i + 1) }}</label>
+        </ng-container>
+      </div>
+    </div> -->
+    <div>
+      <div class="d-flex justify-content-between bd-highlight" (click)="logout()">
+        <a><i class="fa-solid fa-power-off"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>

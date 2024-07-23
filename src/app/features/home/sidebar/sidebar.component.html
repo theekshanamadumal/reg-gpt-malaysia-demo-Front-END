@@ -1,0 +1,40 @@
+<nav id="sidebar">
+  <div class="sidebar-header">
+        <img class="mt-1 custom-mt" src="assets/images/bnm_logo.png" width="140" />
+    <!-- <span class="logo-text">GPT</span> -->
+  </div>
+  <!-- <div class="bg-body-tertiary">
+    <div class="btn-wrapper d-grid">
+      <button class="custom-btn btn-block" (click)="clearChat()">Clear Chat</button>
+    </div>
+    <div class="history-wrapper">
+      <div *ngFor="let dayQueries of history">
+        <div class="list-group list-group-flush px-3 section-wrapper">
+          <h6>{{dayQueries[dayQueries.length-1].createdOn}}</h6>
+          <ul class="mb-0">
+            <div class="list-item-wrapper" *ngFor="let query of dayQueries ; let i = index">
+              <li *ngIf="i!=dayQueries.length-1">
+                <a class="list-group-item list-group-item-action active py-2 lh-sm" aria-current="true"
+                  (click)="showChat(query)">
+                  <div [class]="isActive(query)? 'active' : 'small'">{{query.question}}</div>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <button class="list-group-item list-group-item-action view-more" aria-current="true"
+            (click)="viewMore(dayQueries)" *ngIf="showViewMore[dayQueries[0].createdOn]">
+            <div class="small">View More</div>
+          </button>
+        </div>
+      </div>
+    </div> 
+  </div> -->
+</nav>
+
+<style>
+  .logo-text {
+      font-size: 20px; /* Adjust size as needed */
+      font-weight: bold; /* Adjust weight as needed */
+      color: #000;
+  }
+</style>

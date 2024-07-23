@@ -1,0 +1,81 @@
+.gradient-custom-2 {
+    // fallback for old browsers 
+    // Chrome 10-25, Safari 5.1-6 
+    background: -webkit-linear-gradient(to top, #128455, #128455, #128455, #128455);
+    //background-color: #128455;
+    height: 90vh !important;
+    // W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+    background: linear-gradient(to top, #128455, #128455, #128455, #128455);
+    //background-color: #128455;
+    background-color: #35518D;
+    background-image: url("/assets/images/wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-left-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+    }
+}
+
+.custom-padding {
+    padding-top: 200px !important;
+    padding-bottom: 200px !important;
+}
+
+.btn-login {
+    background-color: #128455;
+    border: 1px solid #128455;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-login:hover {
+    background-color: #0f744a;
+    border: 1px solid #128455;
+}
+
+.copywrite-text {
+    font-size: 11px;
+    font-weight: 500;
+    color: #858585;
+}
+
+.color-gray1 {
+    color: #858585;
+}
+
+.custom-large-text {
+    font-size: 80px;
+    font-weight: 700;
+}
+
+#bg-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.svg-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.form-control,
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    padding: 10px 15px;
+}

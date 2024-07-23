@@ -1,0 +1,147 @@
+
+<div class="wrapper">
+  <!--<app-sidebar [history]="history" [showViewMore]="showViewMore"></app-sidebar> -->
+  <app-sidebar></app-sidebar>
+  <!-- Page Content  -->
+  <div id="content">
+    <!-- <app-navbar [models]="models" [user]="user" [selectedModel]="selectedModel"
+      (onChangeModel)="handleChangeModel($event)">
+    </app-navbar> -->
+    <app-navbar></app-navbar>
+
+    <div class="content-wrapper">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="input-group mb-3">
+            <div class="container text-center" [hidden]="isContainerHidden">
+              <div class="homelogo-container" style="margin-bottom: 60px;"> 
+                
+                <img class=" mb-2" src="assets/images/bank-logo-big.png" width="180" />
+                
+                <h4>How can I help you today?</h4>
+                <h6>Bagaimana saya boleh membantu anda hari ini?</h6>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" (click)="copyQuestion('What are the latest regulations imposed by the central bank of Malaysia?')">What are the latest regulations imposed by the central bank of Malaysia?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" (click)="copyQuestion('What is the purpose of the central bank?')">What is the purpose of the central bank?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" (click)="copyQuestion('Hi could you please explain what is a central bank to a 3 year old?')">Hi could you please explain what is a central bank to a 3 year old?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text" (click)="copyQuestion('What are the macroeconomic policies in effect by the central bank?')">What are the macroeconomic policies in effect by the central bank?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+          </div>
+          
+            <input type="text" class="form-control" [(ngModel)]="userQuestion" (keyup.enter)="onQuestionSubmit()"
+              placeholder="Message Central Bank of Malaysia Assistant..." aria-label="Write your message" aria-describedby="basic-addon2">
+            <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2"
+              (click)="onQuestionSubmit();">Send</button>
+          </div>
+        </div>
+      </div>
+      <div class="row m-5" *ngIf="this.isLoading">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="ms-2">Processing</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <app-chat [chats]="chats" [selectedChatIndex]="selectedChatIndex"
+            (onQuestionSelect)="handleQuestionSelect($event)"></app-chat>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <app-documents [sourceDocuments]="chats[selectedChatIndex]?.answerModel?.sourceDocuments"></app-documents>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<style>
+  /* Custom styles */
+  .col-6 {
+    background-color: #f0f0f0; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Border radius */
+    margin-bottom: 2px; /* Bottom margin */
+  /* Left margin */
+  }
+
+  .p-3 {
+    font-weight: bold; /* Bold text */
+    color: #333; /* Text color */
+    margin-left: 5px; /* Left margin */
+  }
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.card-text {
+    color: #666;
+}
+
+.container {
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+  .logo-text {
+      font-size: 24px; /* Adjust size as needed */
+      font-weight: bold; /* Adjust weight as needed */
+  }
+  
+</style>

@@ -1,0 +1,44 @@
+ul.list-group {
+    font-size: 11px;
+
+    li {
+        color: #717985 !important;
+        display: block;
+        background-image: url("~/src/assets/images/pdf-1.png");
+        background-position-x: left;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-position: 10px 10px;
+        padding-left: 30px;
+    }
+}
+
+// Q & A content area 
+
+// @media screen and (max-width: 735px) {
+//     #frame .content .message-input .wrap input {
+//         padding: 15px 32px 16px 8px;
+//     }
+// }
+
+// #frame .content .message-input .wrap input:focus {
+//     outline: none;
+// }
+
+// #frame .content .message-input .wrap .attachment {
+//     position: absolute;
+//     right: 60px;
+//     z-index: 4;
+//     margin-top: 10px;
+//     font-size: 1.1em;
+//     color: #435f7a;
+//     opacity: .5;
+//     cursor: pointer;
+// }
+
+// @media screen and (max-width: 735px) {
+//     #frame .content .message-input .wrap .attachment {
+//         margin-top: 17px;
+//         right: 65px;
+//     }
+// }

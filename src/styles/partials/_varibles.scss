@@ -1,0 +1,369 @@
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --app-bg : #f2f3f9;
+    --color-black :#000000;
+    --tooltip-bg :#000000;
+    --color-white : #ffffff;
+    --color-red: #e73827;
+    --text-gray :#979797;
+    --table-btn-bg: #e9e9e9;
+    --hyperlink-color :#254aa5;
+    --label-color:#343e42;
+    --input-text: #000000;
+    --input-bg :#f1f1f9;
+    --input-border: #d8dde4;
+    --modal-header :#263a43;
+    --light-pink:#eac1f4;
+    --light-green:#a0f49e;
+    --light-yellow:#fff3d6;
+    --card-shadow:rgba(0, 0, 0, 0.06);
+    --light-gray:#b2b2b2;
+    --color-light-blue : #B9D9FF;
+    --border-color:#7B7B7B;
+    --lite-gray-p1:#9b9b9b;
+    --loader-color:#1caf9f;
+    --lite-gray-p2:#dddddd;
+    --lite-gray-p5:#ededed;
+    --bedcrumb-bg: #e9ebf3;    
+
+    --ic-success: #008829;
+    --ic-danger: #ff0000;
+    --ic-default: #2555ff;
+    --ic-desabled: #848484;
+
+    --primary-color: #ff3e3e;
+    --primary-color-hover: #ff0404;
+
+    //--secondary-color: #1caf9f;
+    --secondary-color: #006494;
+
+    --navbar: #fff;
+    --navbar-link: #17202d;    
+
+    //--topnavBpLogoPath: url('/assets/images/bp-logo-1.png');
+
+    --sidebar: #1d2939;
+    --sidebar-menu-bg: #17202d;
+    --sidebar-submenu-bg: #192331;
+    --sidebar-main-link: #adb5bd;
+
+    --ac-header-dark: #172735;
+
+    --roboto: 'Roboto', sans-serif; 
+    --roboto-slab: 'Roboto Slab';
+    --source: 'Source Sans Pro';  
+
+    --bp-small-font-size: 11px;
+    --bp-default-font-size: 12px;
+    --bp-medium-font-size: 13px;
+    --bp-large-font-size: 14px;
+    --common-ic-size: 18px;
+
+    --border-radius: 5px;
+
+
+    --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(59,130,246,0.5);
+    --tw-ring-offset-shadow: 0 0 transparent;
+    --tw-ring-shadow: 0 0 transparent;
+    --is-dark: false;
+    --treo-bg-app-bar: #fff;
+    --treo-bg-app-bar-rgb: 255,255,255;
+    --treo-bg-card: #fff;
+    --treo-bg-card-rgb: 255,255,255;
+    --treo-bg-default: #f1f5f9;
+    --treo-bg-default-rgb: 241,245,249;
+    --treo-bg-dialog: #fff;
+    --treo-bg-dialog-rgb: 255,255,255;
+    --treo-bg-hover: rgba(148,163,184,0.12);
+    --treo-bg-hover-rgb: 148,163,184;
+    --treo-bg-status-bar: #cbd5e1;
+    --treo-bg-status-bar-rgb: 203,213,225;
+    --treo-text-default: #1e293b;
+    --treo-text-default-rgb: 30,41,59;
+    --treo-text-secondary: #64748b;
+    --treo-text-secondary-rgb: 100,116,139;
+    --treo-text-hint: #94a3b8;
+    --treo-text-hint-rgb: 148,163,184;
+    --treo-text-disabled: #94a3b8;
+    --treo-text-disabled-rgb: 148,163,184;
+    --treo-border: #e2e8f0;
+    --treo-border-rgb: 226,232,240;
+    --treo-divider: #e2e8f0;
+    --treo-divider-rgb: 226,232,240;
+    --treo-icon: #64748b;
+    --treo-icon-rgb: 100,116,139;
+    --treo-mat-icon: #64748b;
+    --treo-mat-icon-rgb: 100,116,139;    
+  }
+
+  
+
+/*Primiry colors*/
+// $app-bg : #f2f3f9;
+// $color-black :#000000;
+// $tooltip-bg :#000000;
+// $color-white : #ffffff;
+// $color-red: #e73827;
+// $text-gray :#979797;
+// $table-btn-bg: #e9e9e9;
+// $hyperlink-color :#254aa5;
+// $label-color:#343e42;
+// $input-text: #000000;
+// $input-bg :#f1f1f9;
+// $input-border: #d8dde4;
+// $modal-header:#263a43;
+// $light-pink:#eac1f4;
+// $light-green:#a0f49e;
+// $light-yellow:#fff3d6;
+// $card-shadow:rgba(0, 0, 0, 0.06);
+// $light-gray:#b2b2b2;
+// $color-light-blue: #B9D9FF;
+// $border-color:#7B7B7B;
+// $lite-gray-p1:#9b9b9b;
+// $loader-color:#1caf9f;
+// $lite-gray-p2:#dddddd;
+// $lite-gray-p5:#ededed;
+// $bedcrumb-bg: #e4e5ec;
+
+// following varibles defined for icon states 
+
+// $ic-success: #008829;
+// $ic-danger: #ff0000;
+// $ic-default: #2555ff;
+// $ic-desabled: #848484;
+
+// POC related 
+
+// ************************************
+// THEME DEFAULT
+// ************************************
+//Primary button states 
+
+// $primary-color: #ff3e3e;
+// $primary-color-hover: #ff0404;
+
+//Secondary element & bg states 
+// $secondary-color: #1caf9f;
+
+// Top Navigation
+// $navbar: #fff;
+// $navbar-link: #17202d;
+
+// image assets path variable 
+//$loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-default.png";
+
+// Sidebar - Left
+// $sidebar: #1d2939;
+// $sidebar-menu-bg: #17202d;
+// $sidebar-submenu-bg: #192331;
+// $sidebar-main-link: #adb5bd;
+
+// Accordian header dark
+// $ac-header-dark: #172735;
+
+// Fonts
+// $roboto: 'Roboto', sans-serif; 
+
+// Font sizes
+// $bp-default-font-size: 12px;
+// $bp-medium-font-size: 13px;
+// $bp-large-font-size: 14px;
+// $common-ic-size: 18px;
+
+// Radius 
+
+// $border-radius: 5px;
+
+// End of POC related 
+
+// Themes 
+
+// ************************************
+// BOC 
+// ************************************
+//Primary button states 
+// $primary-color: #f8bb01;
+// $primary-color-hover: #efb401;
+
+//Secondary element & bg states 
+// $secondary-color: #1d2939;
+
+// Top Navigation
+// $navbar: #f8bb01; 
+// $navbar-link: #17202d;
+
+// image assets path variable 
+// $loginLogoPath :"/assets/images/client-logos/boc.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-default.png";
+
+// ************************************
+// HEMAS
+// ************************************
+//Primary button states 
+// $primary-color: #036c8c;
+// $primary-color-hover: #005f7c;
+
+//Secondary element & bg states 
+// $secondary-color: #eb8016;
+
+// Top Navigation
+// $navbar: #036c8c; 
+// $navbar-link: #fff;
+
+// image assets path variable 
+// $loginLogoPath :"/assets/images/client-logos/hemas.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+
+// ************************************
+// DIALOG - axiata
+// ************************************
+//Primary button states 
+// $primary-color: #254aa5;
+// $primary-color-hover: #224393;
+
+//Secondary element & bg states 
+// $secondary-color: #d21549;
+
+// Top Navigation
+// $navbar: #254aa5; 
+// $navbar-link: #fff;
+
+// image assets path variable 
+// $loginLogoPath :"/assets/images/client-logos/axiata-logo.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// PETRONAS 
+// ************************************
+//Primary button states 
+// $primary-color: #00ae9d;
+// $primary-color-hover: #01a090;
+
+//Secondary element & bg states 
+// $secondary-color: #1d2939;
+
+// Top Navigation
+// $navbar: #00ae9d;
+// $navbar-link: #17202d;
+
+// image assets path variable 
+// $loginLogoPath :"/assets/images/client-logos/petronas.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-default.png"; 
+
+// ************************************
+// THEME Green Dark - Done
+// ************************************
+//Primary button states 
+// $primary-color: #378c3b;
+// $primary-color-hover: #338036;
+
+//Secondary element & bg states 
+// $secondary-color: #1d2939;
+
+// Top Navigation 
+// $navbar: #378c3b;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// THEME Orange Bright - Done
+// ************************************
+//Primary button states 
+// $primary-color: #e67f22;
+// $primary-color-hover: #d87821;
+
+//Secondary element & bg states 
+// $secondary-color: #334960;
+
+// Top Navigation 
+// $navbar: #e67f22;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// THEME / Purple Dark - Done
+// ************************************
+//Primary button states 
+// $primary-color: #8a43ad;
+// $primary-color-hover: #813fa2;
+
+// //Secondary element & bg states 
+// $secondary-color: #344a58;
+
+// Top Navigation
+// $navbar: #8a43ad;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// THEME / Blue Dark - Done
+// ************************************
+//Primary button states 
+// $primary-color: #045097;
+// $primary-color-hover: #024b90;
+
+//Secondary element & bg states 
+// $secondary-color: #727e7f;
+
+// Top Navigation
+// $navbar: #045097;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// THEME / Blue Light - Done
+// ************************************
+//Primary button states 
+// $primary-color: #1679d5;
+// $primary-color-hover: #045097;
+
+//Secondary element & bg states 
+// $secondary-color: #1d2939;
+
+// Top Navigation
+// $navbar: #1679d5;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// THEME / Red Dark - Done
+// ************************************
+//Primary button states 
+// $primary-color: #b41100;
+// $primary-color-hover: #971204;
+
+//Secondary element & bg states 
+// $secondary-color: #727e7f;
+
+// Top Navigation
+// $navbar: #b41100;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
+
+// ************************************
+// THEME / Red Light - Done
+// ************************************
+//Primary button states 
+// $primary-color: #e62916;
+// $primary-color-hover: #b41100;
+
+//Secondary element & bg states 
+// $secondary-color: #727e7f;
+
+// Top Navigation
+// $navbar: #e62916;
+// $navbar-link: #fff;
+// $loginLogoPath :"/assets/images/client-logos/common.png";
+// $topnavBpLogoPath: "/assets/images/bp-logo-invert.png"; 
