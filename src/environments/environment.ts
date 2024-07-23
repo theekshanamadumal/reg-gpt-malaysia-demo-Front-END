@@ -5,8 +5,9 @@
 export const environment = {
   production: false,
   // identityServerURL: 'http://127.0.0.1:8000'  // for local
+  identityServerURL: 'http://124.43.9.164:8000'  // for local
   // identityServerURL: 'http://192.168.10.98:8000' // for Network
-  identityServerURL: 'https://reg-gpt-malaysia-demo-backend.azurewebsites.net' // for azure app service
+  // identityServerURL: 'https://reg-gpt-malaysia-demo-backend.azurewebsites.net' // for azure app service
 };
 
 /*
