@@ -4,10 +4,12 @@
 
 export const environment = {
   production: false,
-  // identityServerURL: 'http://127.0.0.1:8000'  // for local
-  identityServerURL: 'http://124.43.9.164:80'  // for local
+  // identityServerURL: 'http://127.0.0.1:80'  // for local
+  // identityServerURL: 'http://124.43.9.164:80'  // for local
   // identityServerURL: 'http://192.168.10.98:8000' // for Network
-  // identityServerURL: 'https://reg-gpt-malaysia-demo-backend.azurewebsites.net' // for azure app service
+  // identityServerURL: 'http://reg-gpt-malaysia-demo-backend.azurewebsites.net' // for azure app service
+  identityServerURL: 'https://reg-gpt-malaysia-demo-backend.azurewebsites.net' // for azure app service
+  // identityServerURL: 'https://theekshanaistesting.azurewebsites.net/' // for azure app service
 };
 
 /*
