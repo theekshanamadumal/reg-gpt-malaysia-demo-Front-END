@@ -2,12 +2,12 @@
   "name": "ai-qa-web",
   "version": "0.0.0",
   "scripts": {
-    "ng": "SET NODE_OPTIONS=--openssl-legacy-provider && ng",
-    "start": "SET NODE_OPTIONS=--openssl-legacy-provider && ng serve",
-    "build": "SET NODE_OPTIONS=--openssl-legacy-provider && ng build",
-    "test": "SET NODE_OPTIONS=--openssl-legacy-provider && ng test",
-    "lint": "SET NODE_OPTIONS=--openssl-legacy-provider && ng lint",
-    "e2e": "SET NODE_OPTIONS=--openssl-legacy-provider && ng e2e"
+    "ng": "export NODE_OPTIONS=--openssl-legacy-provider && ng", 
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && ng serve",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && ng build",
+    "test": "export NODE_OPTIONS=--openssl-legacy-provider && ng test",
+    "lint": "export NODE_OPTIONS=--openssl-legacy-provider && ng lint",
+    "e2e": "export NODE_OPTIONS=--openssl-legacy-provider && ng e2e"
   },
   "private": true,
   "dependencies": {
